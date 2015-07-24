@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E107BB881B5F1E15008503B6 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E107BB871B5F1E15008503B6 /* movie_quote.mp3 */; };
 		E14A216A1B4F933300B671DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A21691B4F933300B671DD /* AppDelegate.swift */; };
 		E14A216C1B4F933300B671DD /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A216B1B4F933300B671DD /* RecordSoundsViewController.swift */; };
 		E14A216F1B4F933300B671DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14A216D1B4F933300B671DD /* Main.storyboard */; };
@@ -29,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E107BB871B5F1E15008503B6 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../../../Downloads/movie_quote.mp3; sourceTree = "<group>"; };
 		E14A21641B4F933300B671DD /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14A21681B4F933300B671DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E14A21691B4F933300B671DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		E14A21671B4F933300B671DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E107BB871B5F1E15008503B6 /* movie_quote.mp3 */,
 				E14A21681B4F933300B671DD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -204,7 +201,6 @@
 			files = (
 				E14A216F1B4F933300B671DD /* Main.storyboard in Resources */,
 				E14A21741B4F933300B671DD /* LaunchScreen.xib in Resources */,
-				E107BB881B5F1E15008503B6 /* movie_quote.mp3 in Resources */,
 				E14A21711B4F933300B671DD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
