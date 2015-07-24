@@ -61,9 +61,7 @@ class playSoundViewController: UIViewController {
     
     func playAudioWithVariablePitch(pitch:Float){
         
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
+        stopAudio()
         
         var audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
@@ -87,9 +85,7 @@ class playSoundViewController: UIViewController {
     
     private func playSound(rate: Float) {
         // Stop audioEngine to eliminate sound overlap
-        audioEngine.stop()
-        audioEngine.reset()
-        audioPlayer.stop()
+        stopAudio()
         audioPlayer.enableRate = true
         audioPlayer.rate = rate
         audioPlayer.currentTime = 0.0
@@ -97,8 +93,7 @@ class playSoundViewController: UIViewController {
         
     }
     
-    
-    @IBAction func stopAllPlay(sender: UIButton) {
+    private func stopAudio() {
         audioPlayer.stop()
         audioEngine.stop()
         audioEngine.reset()
@@ -106,10 +101,9 @@ class playSoundViewController: UIViewController {
     }
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func stopAllPlay(sender: UIButton) {
+        stopAudio()
+        
     }
-    
     
 }

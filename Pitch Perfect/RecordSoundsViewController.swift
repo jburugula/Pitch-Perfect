@@ -26,24 +26,16 @@ class RecordSoundsViewController: UIViewController , AVAudioRecorderDelegate{
     //Declared Globally
     var audioRecorder:AVAudioRecorder!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-    }
     
     override func viewWillAppear(animated: Bool) {
-        
+        super.viewWillAppear(animated)
         recordButton.enabled = true
         stopButton.hidden = true
         recordingLebel.text = recordStartText
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+   
     
     @IBAction func stopRecording(sender: UIButton) {
         recordButton.enabled = true
@@ -94,7 +86,7 @@ class RecordSoundsViewController: UIViewController , AVAudioRecorderDelegate{
             // save recorded audio file
             let recordedAudio =  RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent!)
             // perform segue
-            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+            performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }
         else
         {
